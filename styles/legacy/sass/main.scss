@@ -1,0 +1,171 @@
+// colors //
+$main: #258de5;
+$white: #ffffff;
+$highlight: #2893ee;
+$heading: #777777;
+
+// main //
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+padding:0;
+margin:0;
+}
+body {
+  background-color: #f9f9fb;
+  direction: rtl;
+  font-family:'Droid Arabic Naskh',serif;
+}
+.wrap {
+  width: 1440px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.btn {
+  box-shadow: 0px 0px 5px 0px rgba(10, 10, 10, 0.27);
+  padding: 12px;
+  color: $white;
+}
+.btn-default {
+  background-color: $highlight;
+  transition: all 0.2s linear;
+  &:hover {
+    background-color: $main;
+  }
+}
+button {
+  border: none;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color:$white;
+}
+// header //
+#cover {
+  background-color: $main;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.58);
+  margin-bottom: 3rem;
+  header {
+    padding: 2rem;
+  }
+  #get_on_top {
+    color: $white;
+    font-size: 1.58rem;
+    margin: 0;
+    padding-bottom: 2rem;
+    span {
+      font-weight: normal;
+      font-size: 29px;
+      margin-right: 0.4rem;
+    }
+    .icon-kleeja-menu {
+    background-image: url("../images/icon-menu.svg");
+    display: inline-block;
+    opacity: .5;
+    width: 22px;
+    height: 19px;
+    transition: all 0.2s linear; // might need to change linear time
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+    }
+  }
+  nav {
+    margin-bottom: -1.41rem;
+    a {
+      text-decoration: none;
+      color:$white;
+      opacity: 0.5;
+      margin-left: 1.3rem;
+      transition: all 0.2s linear;
+      position: relative; // under line postion
+      padding: 9px 7px; // under line width and pushing it to bottom
+      &:hover{
+        color:$white;
+        opacity: 1;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-bottom: 2px solid $white;
+        }
+      }
+    }
+    .active {
+      opacity: 1;
+      &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-bottom: 2px solid $white;
+      }
+    }
+  }
+}
+
+.drop-menu {
+  background-color: $white;
+  box-shadow: 0px 0px 5px 0px rgba(10, 10, 10, 0.27);
+  padding: 34px;
+  margin-top: -3px;
+  position: absolute;
+  visibility:hidden;
+  opacity:0;
+  transition: all 0.2s linear;
+  z-index: 1;
+  li {
+    a {
+      color: #3B3B3B;
+      font-size: 1.1rem;
+      display: block;
+      padding: 13px;
+    }
+  }
+  li:hover {
+    background-color: #F1F1F1;
+  }
+  &.open {
+    visibility:visible;
+    opacity:1;
+    filter:alpha(opacity=100);
+  }
+}
+
+// upload section //
+#upload {
+  background-color: $white;
+  box-shadow: 0px 0px 5px 0px rgba(156, 156, 156, 0.27);
+  max-width: 58rem;
+  margin: 2rem auto;
+  .content {
+    padding: 2rem 9rem;
+    position: relative;
+  }
+  h2 {
+    color :$heading;
+  }
+  p {
+    color: #9E9D9D;
+  }
+  .icon-kleeja-upload {
+    background-image: url("../images/icon-upload.png");
+    width: 88px;
+    height: 79px;
+    position: absolute;
+    right: 25px;
+    left: 0;
+    top: 24px;
+    opacity: 0.5;
+  }
+}
+.next {
+  float:left;
+  margin-top: 1rem;
+}

@@ -1,0 +1,103 @@
+
+@font-face {
+    font-family: "JF Flat Regular";
+    src: url('../fonts/JF-Flat-regular.eot');
+    src: url('../fonts/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+    url('../fonts/JF-Flat-regular.woff') format('woff'),
+    url('../fonts/JF-Flat-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5{
+  font-family:'JF Flat Regular', sans-serif;
+}
+
+
+/*admin_header*/
+.navbar-static-top {
+  margin-bottom: 19px;
+}
+.icon-for-menu {
+	background-repeat:no-repeat !important;
+    background-position: center center;
+}
+
+
+/*admin_img*/
+.max-thumbnail-size{
+	max-width:150px;
+	height:auto;
+	margin:5px;
+}
+
+.thumbnail-selected{
+	border:1px solid red;
+}
+
+.kcheck {
+	margin:0;
+}
+
+#search-one-item{
+	width:50%;
+}
+.img-info-box{
+	font-size:11px;
+}
+
+/*admin_users*/
+.user-group-box{
+	padding:4px;
+}
+
+/*general*/
+.popover {
+	max-width: 800px;
+	width: auto;
+}
+/*admin_start*/
+.graphLabelchart_stats{
+	font-size:10px;
+}
+
+
+/*admin_users*/
+.adm-groups {
+
+}
+.adm-groups .panel-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #666;
+    line-height: 45px;
+    padding-top: 20px;
+    letter-spacing: -0.8px;
+}
+
+.adm-groups small{
+    font-size:12px;
+}
+.adm-groups .alist-link{
+    cursor: pointer;
+}
+
+
+/*admin_footer*/
+footer{
+    margin-top: 40px;
+    text-align: left;
+    font-size:12px;
+}
+footer p{
+    float:right;
+}
+
+.panel-clickable{
+    cursor: pointer;
+}
+
+table .extra_info {
+    padding: 10px 0;
+}
